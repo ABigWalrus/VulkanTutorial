@@ -5,7 +5,7 @@ build_ninja() {
 	cmake -S . -B build -G "Ninja"
 	cd build || exit
 	ninja
-	./RayTracer
+	./BigEngine
 }
 
 build_unix() {
