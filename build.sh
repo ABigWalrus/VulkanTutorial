@@ -13,15 +13,15 @@ build_unix() {
 	cmake -S . -B build -G "Unix Makefiles"
 	cd build || exit
 	make
-	./RayTracer
+	./BigEngine
 }
 
 build_debug() {
-	mkdir -p build-debug
+	mkdir -p build
 	cmake -S . -B build-debug -G "Ninja" -D GLFW_BUILD_X11=1 -D GLFW_BUILD_WAYLAND=0
 	cd build-debug || exit
 	ninja
-	./RayTracer
+	./BigEngine
 }
 
 while [[ $# -gt 0 ]];do

@@ -1,59 +1,12 @@
-# Prerequisites
-*.d
-# Compiled Object files
-*.slo
-*.lo
-*.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
 *.bat
 *.spv
-
-CMakeLists.txt.user
-CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
-cmake_install.cmake
-install_manifest.txt
-compile_commands.json
-CTestTestfile.cmake
-_deps
+*.jpg
+*.png
 
 [Bb][Uu][Ii][Ll][Dd]
-libs
-.vscode
 
-external/glfw-3.4
-external/glm
-external/stb-master
-external/tinyobjloader-release
-glfw*
 .cache/*
+.vscode/*
+.idea/*
 
-TODO.md
