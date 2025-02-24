@@ -1,8 +1,8 @@
 #pragma once
 
 #include "window.hpp"
-#include "device.hpp"
-#include "render.hpp"
+#include "../Render/device.hpp"
+#include "../Render/render.hpp"
 #include <string>
 
 class Application{
