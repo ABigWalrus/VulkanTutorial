@@ -6,11 +6,24 @@ set(CMAKE_CXX_STANDARD 17)
 find_package(Vulkan REQUIRED)
 set(VULKAN_INCLUDE_DIRS "${VULKAN_SDK_PATH}/Include")
 
-add_subdirectory(src)
+# add_subdirectory(src)
+set(SOURCE_FILES
+	src/Engine/app.cpp
+	src/Engine/window.cpp
+	src/Render/device.cpp
+    src/Render/render.cpp
+    src/main.cpp
+)
+add_executable(
+	${PROJECT_NAME}
+	${SOURCE_FILES}
+)
+
 add_subdirectory(external)
 
 target_include_directories(${PROJECT_NAME} PUBLIC
 	${VULKAN_INCLUDE_DIRS}
+	src
 )
 
 target_link_libraries(${PROJECT_NAME} glfw ${Vulkan_LIBRARIES} glm::glm)
